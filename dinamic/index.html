@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>My blog</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="container">
+            <div class="row ">
+                <div class="col-4">
+                    <h1><a href="#">My blog</a></h1>
+                </div>
+                <nav class="col-8">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-house"></i>Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user"></i>
+                                Кабинет
+                            </a>
+                            <ul>
+                                <li><a href="">Админ панель</a></li>
+                                <li><a href="">Выход</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+    <!-- Блок карусели START -->
+    <div class="container">
+        <div class="row">
+            <h2 class="slider-title">Топ публикации</h2>
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <!-- <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div> -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://avatars.mds.yandex.net/i?id=f7799a0580deef1917a793fd35b59dedf9c41ab6-9289605-images-thumbs&n=13"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption-hack d-none d-md-block">
+                        <h5><a href="">First slide label</a></h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://avatars.mds.yandex.net/i?id=72be90d249e9838ecb40f2c07af954c32475fd5e-8342740-images-thumbs&n=13"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption-hack d-none d-md-block">
+                        <h5><a href="">Second slide label</a></h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://avatars.mds.yandex.net/i?id=d5204a792707f59a57e8b62647ce524f60dcb203-8287805-images-thumbs&n=13"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption-hack d-none d-md-block">
+                        <h5><a href="">Third slide label</a></h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Блок карусели END -->
+    <!-- блок main START -->
+    <div class="container">
+        <div class="content row">
+            <!-- MAIN content -->
+            <div class="main-content col-md-9 col-12">
+                <h2>Последние публикации</h2>
+                <div class="post row">
+                    <div class="img col-12 col-md-4">
+                        <img src="https://avatars.mds.yandex.net/i?id=f7799a0580deef1917a793fd35b59dedf9c41ab6-9289605-images-thumbs&n=13"
+                            alt="" class="img-thumbnail">
+                    </div>
+                    <div class="post_text col-12 col-md-8">
+                        <h3>
+                            <a href="">Прикольная статья</a>
+                        </h3>
+                        <i class="far fa-user"><span class="author-name">Александр Иванов</span></i>
+                        <i class="far fa-calendar"><span class="author-date">22 мая 2022</span></i>
+                        <p class="preview-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam repellat inventore sunt
+                            eaque enim suscipit veniam natus ad adipisci! Tempore nisi quam cum explicabo possimus
+                            eligendi eum recusandae ad laudantium?
+                        </p>
+                    </div>
+                </div>
+                <div class="post row">
+                    <div class="img col-12 col-md-4">
+                        <img src="https://avatars.mds.yandex.net/i?id=f7799a0580deef1917a793fd35b59dedf9c41ab6-9289605-images-thumbs&n=13"
+                            alt="" class="img-thumbnail">
+                    </div>
+                    <div class="post_text col-12 col-md-8">
+                        <h3>
+                            <a href="">Прикольная статья</a>
+                        </h3>
+                        <i class="far fa-user"><span class="author-name">Александр Иванов</span></i>
+                        <i class="far fa-calendar"><span class="author-date">22 мая 2022</span></i>
+                        <p class="preview-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam repellat inventore sunt
+                            eaque enim suscipit veniam natus ad adipisci! Tempore nisi quam cum explicabo possimus
+                            eligendi eum recusandae ad laudantium?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar Content -->
+            <div class="sidebar col-md-3">
+                sidebar
+            </div>
+        </div>
+    </div>
+
+    <!-- блок main END -->
+
+
+
+    <script src="https://kit.fontawesome.com/955f052d71.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
