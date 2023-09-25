@@ -1,0 +1,33 @@
+form {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    margin: auto;
+    border: 1px solid black;
+    padding: 20px;
+    align-items: center;
+
+}
+
+.login_block {
+    width: 200px;
+}
+
+.password_block {
+    width: 200px;
+}
+
+.btn_block {
+    width: 200px;
+    margin-top: 20px;
+}
+
+#send,
+input {
+
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+}
