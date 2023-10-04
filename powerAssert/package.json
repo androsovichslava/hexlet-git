@@ -1,0 +1,20 @@
+{
+  "name": "powerassert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-espower": "^3.0.1",
+    "espower": "^2.1.2",
+    "espower-ts-node": "^1.0.3",
+    "intelli-espower-loader": "^1.1.0",
+    "mocha": "^10.2.0",
+    "power-assert": "^1.6.1"
+  }
+}
