@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "scripts": {
+    "test": "jest --colors"
+  },
+  "dependencies": {
+    "@hexlet/immutable-fs-trees": "*",
+    "jest": "^29.7.0",
+    "lodash": "*"
+  }
+}
