@@ -1,0 +1,17 @@
+{
+  "name": "compressimages",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@hexlet/immutable-fs-trees": "^0.7.1",
+    "lodash": "^4.17.21"
+  }
+}
