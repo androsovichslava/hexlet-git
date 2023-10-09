@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function solution(arr, type) {
+            // если длина массива меньше двух (в нём один элемент или нет их вообще)
+            // то возвращаем массив как есть, без обработки
+            if (arr.length < 2) return arr;
+            // берём первый элемент массива как опорный
+            let pivot = arr[0];
+            // будущие левые и правые части массива
+            const left = [];
+            const right = [];
+            // перебираем весь массив по порядку
+            for (let i = 1; i < arr.length; i++) {
+                if (type = 'desc') {
+                    debugger
+                    if (pivot > arr[i]) {
+                        // то добавляем текущий элемент в левую часть
+                        right.push(arr[i]);
+                        // в противном случае
+                    } else {
+                        // добавляем текущий элемент в правую часть
+                        left.push(arr[i]);
+                    }
+                } else {
+                    // если опорный элемент больше текущего
+                    if (pivot > arr[i]) {
+                        // то добавляем текущий элемент в левую часть
+                        left.push(arr[i]);
+                        // в противном случае
+                    } else {
+                        // добавляем текущий элемент в правую часть
+                        right.push(arr[i]);
+                    }
+                }
+            }
+            if (type = 'desc') {
+                return solution(left).concat(pivot, solution(right));
+            } else {
+                return solution(left).concat(pivot, solution(right));
+
+            }
+
+        }
+
+
+
+        const items = [10, 20, 0, -1];
+
+        console.log(solution(items)); // [-1, 0, 10, 20]
+        console.log(solution([])); // []
+        console.log(solution(items, 'desc')); // [20, 10, 0, -1]
+    </script>
+</body>
+
+</html>
