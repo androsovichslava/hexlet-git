@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="title">Калькулятор возведения дроби в степень</div>
+            <div class="fractal_container">
+
+
+                <div class="left">
+                    <table>
+                        <tr>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="big">(</td>
+                            <td rowspan="3">
+                                <input type="text" id="integer_num">
+                            </td>
+                            <td>
+                                <input type="text" id="numerator_num">
+                            </td>
+                            <td rowspan="3" class="big">)</td>
+                            <td>
+                                <div class="exponenta_num_container">
+                                    <input type="text" id="exponenta_num">
+                                </div>
+                            </td>
+                            <!-- <td rowspan="3" class="big">=</td> -->
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="hline"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="denumerator_num">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="equals big">
+                    =
+                </div>
+                <div class="right">
+                    <table>
+                        <tr>
+                            <th></th>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <input type="text" id="numerator_num">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="hline"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="denumerator_num">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="calculate">
+                <button id="calculate_button">Вычислить</button>
+            </div>
+            <div id="result">
+                <div id="result1">
+                    <div class="zero">
+                        <table>
+                            <tr>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" class="medium">(</td>
+                                <td rowspan="3">
+                                    <div id="i0"></div>
+                                </td>
+                                <td>
+                                    <div id="n0"></div>
+                                </td>
+                                <td rowspan="3" class="medium">)</td>
+                                <td>
+                                    <div class="exponenta_num_container">
+                                        <div id="e0"></div>
+                                    </div>
+                                </td>
+                                <!-- <td rowspan="3" class="big">=</td> -->
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="hline"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="d0"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="equals medium">
+                        =
+                    </div>
+                    <div class="first">
+                        <table>
+                            <tr>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" class="medium">(</td>
+                                <td rowspan="3">
+                                    <div id="i1"></div>
+                                </td>
+                                <td>
+                                    <div id="n1"></div>
+                                </td>
+                                <td rowspan="3" class="medium">)</td>
+                                <td>
+                                    <div class="exponenta_num_container">
+                                        <div id="e1"></div>
+                                    </div>
+                                </td>
+                                <!-- <td rowspan="3" class="big">=</td> -->
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="hline"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="d1"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="equals medium">
+                        =
+                    </div>
+                    <div class="second">
+                        <table>
+                            <tr>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" class="medium">(</td>
+                                <td rowspan="3">
+                                    <div id="i2"></div>
+                                </td>
+                                <td>
+                                    <div id="n2"></div>
+                                </td>
+                                <td rowspan="3" class="medium">)</td>
+                                <td>
+                                    <div class="exponenta_num_container">
+                                        <div id="e2"></div>
+                                    </div>
+                                </td>
+                                <!-- <td rowspan="3" class="big">=</td> -->
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="hline"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="d2"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="equals medium">
+                        =
+                    </div>
+                    <div class="third">
+                        <table>
+                            <tr>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="n3">22</div>
+                                </td>
+                                <td>
+                                    <div class="exponenta_num_container">
+                                        <div id="e3_1">2</div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="hline"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="d3">33</div>
+                                </td>
+                                <td>
+                                    <div class="exponenta_num_container">
+                                        <div id="e3_2">2</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="equals medium">
+                        =
+                    </div>
+                    <div class="fourth">
+                        <table>
+                            <tr>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="n4">22</div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="hline"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="d4">33</div>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="equals medium">
+                        =
+                    </div>
+                    <div class="fifth">
+                        <table>
+                            <tr>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">
+                                    <div id="i5">
+                                        2222
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="n5">22</div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="hline"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="d5">33</div>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div id="result2">
+                    <div class="third">
+                        <table>
+                            <tr>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="n3_2">22</div>
+                                </td>
+                                <td>
+                                    <div class="exponenta_num_container">
+                                        <div id="e3_1_2">2</div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="hline"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="d3_2">33</div>
+                                </td>
+                                <td>
+                                    <div class="exponenta_num_container">
+                                        <div id="e3_2_2">2</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="equals medium">
+                        =
+                    </div>
+                    <div class="fourth">
+                        <table>
+                            <tr>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="n4_2">22222</div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="hline"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="d4_2">33777</div>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- <div class="equals medium">
+                        =
+                    </div> -->
+                    <!-- <div class="fifth">
+                        <table>
+                            <tr>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">
+                                    <div id="i5_2">
+                                        2222
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="n5_2">22</div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="hline"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="d5_2">33</div>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

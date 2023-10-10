@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.wrapper {
+    min-width: 400px;
+    height: 400px;
+    margin: auto;
+    background-color: #eee;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 300px;
+    height: 300px;
+    top: 50px;
+    background-color: #ddd;
+    margin: auto;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.fractal_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.big {
+    font-size: 60px;
+}
+
+.medium {
+    font-size: 40px;
+}
+
+
+.title {
+    text-align: center;
+    font-size: 20px;
+}
+
+table {
+    margin: auto;
+    position: relative;
+}
+
+table td {
+    white-space: nowrap;
+    text-align: center;
+    /* border: 1px solid blue; */
+}
+
+.td_exponenta {
+    position: absolute;
+}
+
+#exponenta_num,
+#e3 {
+    font-size: 10px;
+    width: 20px;
+    top: 0;
+}
+
+#exponenta_num2 {
+    font-size: 10px;
+    width: 20px;
+    top: 0;
+}
+
+
+#numerator_num,
+#denumerator_num,
+#integer_res,
+#numerator_res,
+#denumerator_res {
+    font-size: 16px;
+    width: 30px;
+
+}
+
+#integer_num {
+    font-size: 20px;
+    width: 30px;
+}
+
+.calculate {
+    text-align: center;
+}
+
+#calculate_button {
+    padding: 10px;
+    margin: 20px;
+
+}
+
+#result {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#result1,
+#result2 {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    width: 200px;
+    font-size: medium;
+    /* display: none; */
+}
+
+.equals {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* background-color: aqua; */
+}
+
+.exponenta_num_container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.left,
+.right {
+    display: flex;
+}
+
+.right {
+    display: none;
+}
+
+.hline {
+    height: 2px;
+    background-color: black;
+}
+
+#e0,
+#e1,
+#e2,
+#e3_1,
+#e3_2,
+#e3_1_2,
+#e3_2_2,
+
+#e4 {
+    font-size: 10px;
+}
