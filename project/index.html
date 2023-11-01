@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Игра Мемори</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--подключите библиотеки React, ReactDOM и BabelJS-->
+  <script src="vendor/react.development.js"></script>
+  <script src="vendor/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@dubaua/get-declension@1.0.2/dist/get-declension.min.umd.js"></script>
+  <script src="vendor/babel.min.js"></script>
+  <!--подключите файл данных-->
+  <script src="./data.js"></script>
+</head>
+
+<body>
+  <div id="root">Корневой элемент</div>
+  <script type="text/babel">
+    console.log(getDeclension({ count: 1, one: 'ребёнок', few: 'ребёнка', many: 'детей' }))
+    const container = document.getElementById('root');
+    const root = ReactDOM.createRoot(container);
+    root.render(<App images={images} visibleItems={visibleItems} finishedItems={finishedItems} />);
+    function App({ images = [], visibleItems = [], finishedItems = [] }) {
+      return (
+        <section class="game container">
+          <ul class="cards cards-theme-cars">
+            <Card url="img/cats-1.jpg" />
+            <Card url="img/cats-1.jpg" />
+            <Card url="img/cats-1.jpg" />
+            <Card url="img/cats-1.jpg" />
+            <Card url="img/cats-1.jpg" />
+            <Card url="img/cats-1.jpg" />
+          </ul>
+        </section>
+      )
+    }
+
+    function Card({ url }) {
+      // console.log(text)
+      const content = <img src={url} width="204" height="144" alt="Котик" />;
+      return (
+        <li className="card card-show">
+          {content}
+        </li>
+      );
+    }
+
+  </script>
+</body>
+
+</html>
